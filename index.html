@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notes Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN SECTION -->
+<div id="loginSection" class="login-page">
+  <div class="login-box">
+    <h2>🔐 Student Login</h2>
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="login()">Login</button>
+    <p id="error"></p>
+  </div>
+</div>
+
+<!-- NOTES SECTION -->
+<div id="notesSection" style="display:none;">
+
+<header>
+  <h1>📚 My Notes Hub</h1>
+  <p id="welcome"></p>
+  <input type="text" id="search" placeholder="Search notes...">
+  <button onclick="logout()" class="logout">Logout</button>
+</header>
+
+<section class="filters">
+  <button onclick="filterNotes('all')">All</button>
+  <button onclick="filterNotes('maths')">Maths</button>
+  <button onclick="filterNotes('physics')">Physics</button>
+  <button onclick="filterNotes('programming')">Programming</button>
+</section>
+
+<section class="notes-container">
+  <div class="note-card maths">
+    <h3>Maths Unit 1</h3>
+    <p>Limits & Derivatives</p>
+    <a href="notes/maths-unit1.pdf" target="_blank">View</a>
+    <a href="notes/maths-unit1.pdf" download>Download</a>
+  </div>
+
+  <div class="note-card physics">
+    <h3>Physics Chapter 2</h3>
+    <p>Electrostatics</p>
+    <a href="notes/physics-ch2.pdf" target="_blank">View</a>
+    <a href="notes/physics-ch2.pdf" download>Download</a>
+  </div>
+
+  <div class="note-card programming">
+    <h3>C Programming</h3>
+    <p>Basics & Loops</p>
+    <a href="notes/c-programming.pdf" target="_blank">View</a>
+    <a href="notes/c-programming.pdf" download>Download</a>
+  </div>
+</section>
+
+</div>
+
+
+</body>
+</html>
